@@ -1,35 +1,65 @@
-import { NextResponse } from 'next/server';
+import { NextResponse } from "next/server";
 
-const posts = [
+let posts = [
   {
-    title: 'Lorem Ipsum',
-    slug: 'lorem-ipsum',
-    content:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero.',
+    title: "Understanding Python Decorators",
+    slug: "understanding-python-decorators",
+    content: "Python decorators are a powerful feature...",
+    author: "Tanav",
   },
   {
-    title: 'Dolor Sit Amet',
-    slug: 'dolor-sit-amet',
-    content:
-      'Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet.',
+    title: "React Hooks: Simplifying State Management",
+    slug: "react-hooks-simplifying-state-management",
+    content: "React Hooks revolutionized the way...",
+    author: "Tanav",
   },
   {
-    title: 'Consectetur Adipiscing',
-    slug: 'consectetur-adipiscing',
-    content:
-      'Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta.',
+    title: "Introduction to Machine Learning with Python",
+    slug: "introduction-to-machine-learning-with-python",
+    content: "Machine Learning is a fascinating field...",
+    author: "Tanav",
   },
   {
-    title: 'Integer Nec Odio',
-    slug: 'integer-nec-odio',
-    content:
-      'Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent.',
+    title: "Exploring the World of Cryptocurrencies",
+    slug: "exploring-cryptocurrencies",
+    content: "Cryptocurrencies have been gaining popularity...",
+    author: "Tanav",
   },
   {
-    title: 'Praesent Libero',
-    slug: 'praesent-libero',
-    content:
-      'Suspendisse in justo eu magna luctus suscipit. Sed lectus. Integer euismod lacus luctus magna.',
+    title: "Building Scalable Web Applications with Node.js",
+    slug: "building-scalable-web-applications-with-nodejs",
+    content: "Node.js is a powerful runtime environment...",
+    author: "Tanav",
+  },
+  {
+    title: "Diving into Data Structures and Algorithms",
+    slug: "diving-into-data-structures-and-algorithms",
+    content: "Data structures and algorithms are fundamental...",
+    author: "Tanav",
+  },
+  {
+    title: "Exploring the Latest Trends in Cybersecurity",
+    slug: "latest-trends-in-cybersecurity",
+    content: "Cybersecurity threats continue to evolve...",
+    author: "Tanav",
+  },
+  {
+    title: "Mastering Modern Web Development with JavaScript",
+    slug: "mastering-modern-web-development-with-javascript",
+    content: "JavaScript remains the backbone of web development...",
+    author: "Tanav",
+  },
+  {
+    title: "Getting Started with Kubernetes: A Beginner's Guide",
+    slug: "getting-started-with-kubernetes",
+    content: "Kubernetes is a powerful container orchestration platform...",
+    author: "Tanav",
+  },
+  {
+    title: "The Rise of Artificial Intelligence: A Comprehensive Overview",
+    slug: "rise-of-artificial-intelligence",
+    content: "Artificial Intelligence is reshaping industries...",
+    author: "Tanav",
   },
 ];
 

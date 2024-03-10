@@ -24,7 +24,8 @@ export default async function Home({params}: Props) {
         <h1 className="text-3xl font-extrabold">{name}</h1>
   
         <Image
-          width={300}
+          width={150}
+          height={150}
           className="rounded-full my-2"
           src={image ?? '/profile.png'}
           alt={`${name}'s profile`}

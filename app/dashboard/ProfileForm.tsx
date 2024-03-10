@@ -23,6 +23,7 @@ export function ProfileForm({ user }: any) {
       },
     });
     
+    alert("updated!")
     await res.json();
   };
 
