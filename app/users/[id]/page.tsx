@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import { prisma } from "@/lib/prisma";
 import FollowButton from "@/components/FollowButton/FollowButton";
+import Image from "next/image";
 FollowButton
 
 interface Props {
@@ -22,7 +23,7 @@ export default async function Home({params}: Props) {
         <div>
         <h1 className="text-3xl font-extrabold">{name}</h1>
   
-        <img
+        <Image
           width={300}
           className="rounded-full my-2"
           src={image ?? '/profile.png'}
@@ -32,7 +33,6 @@ export default async function Home({params}: Props) {
         <h3 className="text-lg font-bold">Bio</h3>
         <p className="mb-2">{bio}</p>
   
-        {/* @ts-expect-error Server Component */}
         <FollowButton targetUserId={params.id} />
       </div>
     )

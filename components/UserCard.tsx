@@ -1,3 +1,4 @@
+import Image from "next/image"
 import Link from "next/link"
 
 interface Props {
@@ -11,7 +12,7 @@ interface Props {
 export default function UserCard({id, name, age, image}: Props) {
     return (
         <div className="border rounded-lg p-3 shadow-md w-fit flex flex-col items-center justify-center">
-        <img
+        <Image
           src={image ?? '/mememan.webp'}
           alt={`${name}'s profile`}
           className="rounded-full w-12 h-12"
