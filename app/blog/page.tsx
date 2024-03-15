@@ -9,7 +9,7 @@ interface Post {
 
 export default async function Home() {
 
-    const posts: Post[] = await fetch("http://localhost:3000/api/content", { cache: 'no-store' }).then(res=> res.json())
+    const posts: Post[] = await fetch(process.env.SITE_URL + "/api/content", { cache: 'no-store' }).then(res=> res.json())
 
     return (
         <div className="mx-auto w-full">

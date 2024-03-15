@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import AuthProvider from "./AuthProvider";
+import NextTopLoader from 'nextjs-toploader';
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -20,6 +21,7 @@ export default function RootLayout({
     <AuthProvider>
       <html lang="en">
         <body className={inter.className + " bg-slate-200 p-3"}>
+        <NextTopLoader />
           <div className="bg-white mx-auto min-h-[90vh]  max-w-3xl">
             <Navbar />
             <div className="p-8">{children}</div>
