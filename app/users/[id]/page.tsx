@@ -26,7 +26,7 @@ export default async function Home({params}: Props) {
         <Image
           width={150}
           height={150}
-          className="rounded-full my-2"
+          className="rounded my-2"
           src={image ?? '/profile.png'}
           alt={`${name}'s profile`}
         />
